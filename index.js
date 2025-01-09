@@ -54,8 +54,8 @@ io.on('connection', async (socket) => {
 app.get('/health', (req, res) => {
     res.status(200).send({ status: 'ok' });
 });
-app.get('/paste', (req, res) => {
-    res.status(200).send({ status: 'ok' });
+app.get('/', (req, res) => {
+    res.status(200).send({ status: 'default path check' });
 });
 
 server.listen(PORT, () => {
