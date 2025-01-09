@@ -54,6 +54,9 @@ io.on('connection', async (socket) => {
 app.get('/health', (req, res) => {
     res.status(200).send({ status: 'ok' });
 });
+app.get('/paste', (req, res) => {
+    res.status(200).send({ status: 'ok' });
+});
 
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
